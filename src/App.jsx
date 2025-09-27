@@ -5,6 +5,12 @@ import Nav from "./Component/Navbar/Nav";
 import AboutUs from "./Component/AboutUs"; 
 import Rewards from "./Component/Dashboard/Rewards";
 import Loan from "./Component/Loan";
+import Bils from "./Component/Dashboard/Bils";
+import Cards from "./Component/Dashboard/Card";
+import Review from "./Component/Dashboard/Review";
+import Brands from "./Component/Dashboard/Brands";
+import Service from "./Component/Dashboard/Service";
+import Footer from "./Component/Dashboard/Footer";
 
 function App() {
   return (
@@ -18,7 +24,13 @@ function App() {
               <HeroSection />
               <UserData />
               <Rewards/>
-              <Loan/>
+              <Bils/>
+              <Cards/>
+              <Review/>
+              <Brands/> 
+              <Service/>
+              <Footer/>
+              {/* <Loan/> */}
             </>
           }
         />

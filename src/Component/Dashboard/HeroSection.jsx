@@ -12,11 +12,12 @@ const HeroSection = () => {
             </span>
             <span className="text-white text-sm">FOR 1 MONTH ACCOUNT</span>
           </div>
-
-          <h1 className="text-[64px] md:text-[66px] font-extrabold leading-[1.1] tracking-tight ml-2">
+          <h1 className="text-[64px] md:text-[72px] font-extrabold leading-[1.1] tracking-tight ml-2">
             <span className="block text-white">The Next</span>
             <span className="block text-[#33BBCF]">Generation</span>
-            <span className="block text-white">Payment Method.</span>
+            <span className="text-white whitespace-nowrap">
+              Payment <span className="text-[#33BBCF]">Method.</span>
+            </span>
           </h1>
 
           <p className="text-gray-400 text-lg max-w-md leading-relaxed">

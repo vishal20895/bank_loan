@@ -42,23 +42,25 @@ const Loans = () => {
           </tr>
         </thead>
         <tbody>
-          {Array.isArray(loans) && loans.length > 0 ? (
-            loans.map((loan) => (
-              <tr key={loan.id}>
-                <td className="border border-gray-400 px-4 py-2">{loan.id}</td>
-                <td className="border border-gray-400 px-4 py-2">{loan.customer_name}</td>
-                <td className="border border-gray-400 px-4 py-2">{loan.loan_type}</td>
-                <td className="border border-gray-400 px-4 py-2">₹{loan.amount}</td>
-                <td className="border border-gray-400 px-4 py-2">{loan.status}</td>
-              </tr>
-            ))
-          ) : (
-            <tr>
-              <td colSpan="5" className="text-center py-4">
-                No loans found
+          {loans.map((loan) => (
+            <tr key={loan.id}>
+              <td className="border border-gray-400 px-4 py-2 text-white">
+                {loan.id}
+              </td>
+              <td className="border border-gray-400 px-4 py-2 text-white">
+                {loan.customer_name}
+              </td>
+              <td className="border border-gray-400 px-4 py-2 text-white">
+                {loan.loan_type}
+              </td>
+              <td className="border border-gray-400 px-4 py-2 text-white">
+                ₹{loan.amount}
+              </td>
+              <td className="border border-gray-400 px-4 py-2 text-white">
+                {loan.status}
               </td>
             </tr>
-          )}
+          ))}
         </tbody>
       </table>
     </div>
